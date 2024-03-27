@@ -1,0 +1,28 @@
+{
+	"attributes": [
+		{
+			"selected": [
+				{
+					"name": "_startTime",
+					"basePath": null
+				},
+				{
+					"name": "_endTime",
+					"basePath": null
+				},
+				{
+					"name": "avgHR",
+					"basePath": "_summary"
+				},
+				{
+					"name": "_device",
+					"basePath": null
+				},
+				{
+					"name": "_patient",
+					"basePath": null
+				}
+			]
+		}
+	]
+}

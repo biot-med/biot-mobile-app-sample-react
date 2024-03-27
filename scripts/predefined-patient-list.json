@@ -1,0 +1,24 @@
+{
+	"attributes": [
+		{
+			"selected": [
+				{
+					"name": "_name",
+					"basePath": null
+				},
+				{
+					"name": "_dateOfBirth",
+					"basePath": null
+				},
+				{
+					"name": "_gender",
+					"basePath": null
+				},
+				{
+					"name": "_username",
+					"basePath": null
+				}
+			]
+		}
+	]
+}

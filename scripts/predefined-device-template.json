@@ -1,0 +1,283 @@
+{
+    "name": "simulated_app_device",
+    "displayName": "Simulated App Device",
+	"entityType": "device",
+    "customAttributes": [],
+    "builtInAttributes": [
+        {
+            "name": "_bootTime",
+            "basePath": "_status",
+            "displayName": "Boot Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_certificateStatus",
+            "basePath": "_status",
+            "displayName": "Certificate Status",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_connected",
+            "basePath": "_status._connection",
+            "displayName": "Connected",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_creationTime",
+            "basePath": null,
+            "displayName": "Creation Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_description",
+            "basePath": null,
+            "displayName": "Description",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_fwVersion",
+            "basePath": "_status",
+            "displayName": "FW Version",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_hwVersion",
+            "basePath": "_status",
+            "displayName": "HW Version",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_ipAddress",
+            "basePath": "_status._connection",
+            "displayName": "IP Address",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_lastConnectedTime",
+            "basePath": "_status._connection",
+            "displayName": "Last Connected Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_lastModifiedTime",
+            "basePath": null,
+            "displayName": "Last Modified Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_message",
+            "basePath": "_status._operational",
+            "displayName": "Operational Message",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_status",
+            "basePath": "_status._operational",
+            "displayName": "Operational Status",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_ownerOrganization",
+            "basePath": null,
+            "displayName": "Owner Organization",
+            "phi": false,
+            "validation": {
+                "mandatory": true,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": false,
+                "referencedSideAttributeName": "Simulated App Device Devices",
+                "referencedSideAttributeDisplayName": "Simulated App Device Devices",
+                "validTemplatesToReference": [],
+                "entityType": "organization"
+            }
+        },
+        {
+            "name": "_patient",
+            "basePath": null,
+            "displayName": "Patient",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": false,
+                "referencedSideAttributeName": "Simulated App Device Device",
+                "referencedSideAttributeDisplayName": "Simulated App Device Device",
+                "validTemplatesToReference": [],
+                "entityType": "patient"
+            }
+        },
+        {
+            "name": "_registrationCode",
+            "basePath": null,
+            "displayName": "Registration Code",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": true,
+                "referencedSideAttributeName": "Simulated App Device Registration Code Devices",
+                "referencedSideAttributeDisplayName": "Simulated App Device Registration Code Devices",
+                "validTemplatesToReference": [],
+                "entityType": "registration-code"
+            }
+        },
+        {
+            "name": "_timezone",
+            "basePath": null,
+            "displayName": "Time Zone",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_id",
+            "basePath": null,
+            "displayName": "Unique ID",
+            "phi": false,
+            "validation": {
+                "mandatory": true,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        }
+    ],
+    "templateAttributes": [],
+    "ownerOrganizationId": ""
+}

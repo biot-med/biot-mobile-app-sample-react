@@ -1,0 +1,224 @@
+{
+    "name": "simulation",
+    "displayName": "Simulation",
+    "entityType": "usage-session",
+    "ownerOrganizationId": "",
+    "parentTemplateId": "",
+    "customAttributes": [
+        {
+            "name": "avgHR",
+            "type": "LINK",
+            "displayName": "Average HR",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "defaultValue": null
+            },
+            "selectableValues": [],
+            "category": "SUMMARY",
+            "numericMetaData": null,
+            "referenceConfiguration": null,
+            "linkConfiguration": {
+                "entityTypeName": "patient",
+                "templateId": "",
+                "attributeId": ""
+            }
+        }
+    ],
+    "builtInAttributes": [
+        {
+            "name": "_creationTime",
+            "basePath": null,
+            "displayName": "Creation Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_device",
+            "basePath": null,
+            "displayName": "Device",
+            "phi": false,
+            "validation": {
+                "mandatory": true,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": false,
+                "referencedSideAttributeName": "Sessions",
+                "referencedSideAttributeDisplayName": "Sessions",
+                "validTemplatesToReference": [],
+                "entityType": "device"
+            }
+        },
+        {
+            "name": "_endTime",
+            "basePath": null,
+            "displayName": "End Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_lastModifiedTime",
+            "basePath": null,
+            "displayName": "Last Modified Time",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_ownerOrganization",
+            "basePath": null,
+            "displayName": "Owner Organization",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": false,
+                "referencedSideAttributeName": "Sessions",
+                "referencedSideAttributeDisplayName": "Sessions",
+                "validTemplatesToReference": [],
+                "entityType": "organization"
+            }
+        },
+        {
+            "name": "_patient",
+            "basePath": null,
+            "displayName": "Patient",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": {
+                "uniquely": false,
+                "referencedSideAttributeName": "Sessions",
+                "referencedSideAttributeDisplayName": "Sessions",
+                "validTemplatesToReference": [],
+                "entityType": "patient"
+            }
+        },
+        {
+            "name": "_initiator",
+            "basePath": null,
+            "displayName": "Session Initiator",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_startTime",
+            "basePath": null,
+            "displayName": "Start Time",
+            "phi": false,
+            "validation": {
+                "mandatory": true,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_state",
+            "basePath": null,
+            "displayName": "State",
+            "phi": false,
+            "validation": {
+                "mandatory": true,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_stopReason",
+            "basePath": "_summary",
+            "displayName": "Stop Reason",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        },
+        {
+            "name": "_stopReasonCode",
+            "basePath": "_summary",
+            "displayName": "Stop Reason Code",
+            "phi": false,
+            "validation": {
+                "mandatory": false,
+                "min": null,
+                "max": null,
+                "regex": null,
+                "defaultValue": null
+            },
+            "numericMetaData": null,
+            "referenceConfiguration": null
+        }
+    ],
+    "templateAttributes": [
+        {
+            "name": "_requiredMeasurementIntervalMilliseconds",
+            "basePath": null,
+            "displayName": "Required Measurement Interval",
+            "phi": false,
+            "referenceConfiguration": null,
+            "value": 1000,
+            "organizationSelectionConfiguration": null
+        }
+    ]
+}

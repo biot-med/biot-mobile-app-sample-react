@@ -1,0 +1,98 @@
+{
+	"attributes": [
+		{
+			"classification": "LOGIN",
+			"selected": []
+		},
+		{
+			"classification": "REGULAR",
+			"selected": [
+				{
+					"name": "_name",
+					"basePath": null
+				},
+				{
+					"name": "_description",
+					"basePath": null
+				},
+				{
+					"name": "_email",
+					"basePath": null
+				},
+				{
+					"name": "_phone",
+					"basePath": null
+				},
+				{
+					"name": "_additionalPhone",
+					"basePath": null
+				},
+				{
+					"name": "_address",
+					"basePath": null
+				},
+				{
+					"name": "_gender",
+					"basePath": null
+				},
+				{
+					"name": "_dateOfBirth",
+					"basePath": null
+				},
+				{
+					"name": "_creationTime",
+					"basePath": null
+				},
+				{
+					"name": "_ownerOrganization",
+					"basePath": null
+				},
+				{
+					"name": "_caregiver",
+					"basePath": null
+				},
+				{
+					"name": "Sessions",
+					"basePath": "_referencers"
+				}
+			]
+		}
+	],
+	"measurements": {
+		"chart": [
+			{
+				"name": "hr",
+				"basePath": null
+			},
+			{
+				"name": "ecg",
+				"basePath": null
+			},
+			{
+				"name": "spo2",
+				"basePath": null
+			}
+		],
+		"headline": [
+			{
+				"name": "hr",
+				"basePath": null
+			},
+			{
+				"name": "spo2",
+				"basePath": null
+			}
+		]
+	},
+	"tabs": [
+		{
+			"type": "REVERSE_REFERENCE",
+			"template": null,
+			"externalPage": null,
+			"reverseReference": {
+				"name": "Sessions",
+				"basePath": "_referencers"
+			}
+		}
+	]
+}
