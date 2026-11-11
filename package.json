@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.19.3",
-    "@react-navigation/native": "^6.1.7",
-    "@react-navigation/native-stack": "^6.9.13",
+    "@react-navigation/native": "^7.5.1",
+    "@react-navigation/native-stack": "^7.21.0",
     "@reduxjs/toolkit": "^1.9.5",
     "asyncstorage-down": "^4.2.0",
     "aws-iot-device-sdk-v2": "^1.16.0",
